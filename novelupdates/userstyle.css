@@ -1,0 +1,103 @@
+/* ==UserStyle==
+@name           Novelupdates
+@namespace      Novel
+@author         zelosleone
+@description    'Beautiful, minimal theme'
+@version        1.0
+==/UserStyle== */
+@-moz-document domain("novelupdates.com") {
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif !important;
+}
+
+#myTable thead tr {
+    background-color: #ffffff;
+    color: #000;
+}
+
+#gs_menu {
+    color: white;
+}
+
+i.fa.fa-search.menu {
+    color: white !important;
+}
+
+i.fa.fa-bell.menu[aria-hidden="true"][dp="yes"] {
+    color: white;
+}
+
+#menu_right_item {
+    color: white !important;
+}
+
+#myTable tbody tr {
+    background-color: #fff;
+    color: #333;
+}
+
+.tbl_sort th {
+    color: #fff;
+    /* changed from #000 */
+}
+
+#myTable tbody tr:nth-child(odd) {
+    background-color: #f0f0f0;
+}
+
+#myTable thead tr th {
+    border-bottom: 1px solid #333;
+}
+
+#myTable tbody tr td {
+    border-bottom: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+.header {
+    font-weight: bold;
+    font-size: 12px;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center !important;
+}
+
+.l-header {
+    background-color: #fff;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+}
+
+.l-header a {
+    color: #333;
+    text-decoration: none;
+}
+
+
+#menu_username_right {
+    background-color: #2C3E50;
+    color: #000;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.widget.widget_text {
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 25px 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.widgettitle_nuf {
+    text-align: center !important;
+    font-family: 'Roboto Mono', monospace !important;
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+}

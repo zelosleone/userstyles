@@ -1,0 +1,58 @@
+* {
+  font-family: SF Pro Round !important;
+}
+
+#PersonalToolbar {
+  min-height: 40px !important;
+  max-height: 40px !important;
+}
+
+#PersonalToolbar toolbarbutton {
+  min-height: 40px !important;
+  max-height: 40px !important;
+  margin-right: 20px !important;
+}
+
+#PersonalToolbar toolbarbutton .toolbarbutton-icon,
+#context-back,
+#context-forward,
+#context-stop,
+#context-bookmarkpage,
+#context-navigation,
+#context-sep-navigation,
+#context-savepage,
+#context-pocket,
+#context-selectall,
+#context-sep-selectall,
+#contentAreaContextMenu > menuseparator:nth-child(92){
+  display: none !important;
+}
+
+#TabsToolbar {
+  height: 40px !important;
+}
+
+#PlacesToolbarItems > .bookmark-item[container="true"]::after{
+  content: "";
+  display: -moz-box;
+  width: 12px;
+  height: 12px;
+  background-image: url("chrome://global/skin/icons/arrow-down-12.svg");
+  margin-inline-start: 4px;
+  width: 12px;
+  fill: currentColor;
+  -moz-context-properties: fill;
+}
+
+
+#PersonalToolbar .bookmark-item[container] .menu-iconic-left {
+  display: none !important;
+}
+
+.tabbrowser-tab .tab-icon-image {
+display: none !important;
+}
+
+.tab-throbber {
+display: none !important;
+}

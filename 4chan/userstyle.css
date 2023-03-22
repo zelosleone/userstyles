@@ -1,0 +1,1056 @@
+/* ==UserStyle==
+@name           4chan but cooler
+@namespace      4chan
+@author         zelosleone
+@description    'Beautiful, minimal theme'
+@version        1.0
+==/UserStyle== */
+@-moz-document domain("4chan.org"),
+domain("4channel.org") {
+
+    hr {
+        margin-top: 100px !important;
+        padding-top: 0 !important;
+        border: 0 !important;
+    }
+
+
+    :root {
+        --post-bg: #f0f0f0 !important;
+        --alt-bg: #e6e6e6 !important;
+        --header-bg: #d9d9d9 !important;
+        --main-text: #333333 !important;
+        --secondary-text: #4c4c4c !important;
+        --third-text: #999999 !important;
+        --title-text: #660066 !important;
+    }
+
+
+
+    body,
+    html {
+        background: var(--alt-bg) !important;
+        background-repeat: repeat !important;
+        background-attachment: fixed !important;
+        background-position: center center !important;
+        margin: 0 auto !important;
+    }
+
+
+    .div.boardTitle,
+    .yotsuba-b:root div.boardTitle,
+    div.boardTitle {
+        display: none !important;
+        margin-top: 40px !important;
+    }
+
+    body {
+        margin-top: 10px !important;
+    }
+
+    #bannerCnt {
+        display: none !important;
+    }
+
+    /*
+	body::after {
+    position: fixed !important;
+    margin-left: -150px !important;  
+	bottom: -250px !important; 
+    z-index: 1 !important;    
+	position: fixed !important;
+    content: url('https://www.pngmart.com/files/15/Vector-School-Anime-Girl-PNG-Photos.png');
+    opacity:0.5;
+	-webkit-transform: scale(0.67);
+    -moz-transform: scale(0.67);
+    transform: scale(0.67);
+	}   
+	*/
+    div.opContainer {
+        min-height: 180px !important;
+        overflow: hidden;
+    }
+
+
+    .div.boardTitle,
+    .yotsuba-b:root div.boardTitle,
+    div.boardTitle {
+        text-align: center;
+        font-family: "Segoe Script", cursive !important;
+        font-size: 48px !important;
+        padding: 0 !important;
+        color: var(--title-text) !important;
+    }
+
+
+    body,
+    #qr,
+    #thread-watcher,
+    #thread-watcher .refresh,
+    .menu-button .fa,
+    #watched-threads .watcher-title,
+    #watched-threads .watcher-unread,
+    #thread-watcher a,
+    .entry,
+    #qr textarea.field,
+    .right-box,
+    .field,
+    .globalMessage,
+    div#boardNavDesktop,
+    table.postForm > tbody > tr > td:first-child,
+    input[type="text"],
+    input[type="password"],
+    table.postForm > tbody textarea,
+    #recaptcha_response_field,
+    div#boardNavDesktopFoot,
+    .gal-count,
+    #index-search,
+    .expand-all-shortcut,
+    .subject,
+    div.post div.postInfo,
+    #custom-board-list,
+    .yotsuba-b:root #board-list a,
+    .yotsuba:root #board-list a {
+        color: var(--main-text) !important;
+    }
+
+
+    a,
+    div.post div.postInfo span.postNum a:hover,
+    a.deadlink,
+    a.close,
+    .tab-filter,
+    a.tab-main.tab-selected,
+    #qr-no-file,
+    .yotsuba-b:root .entry,
+    #boards a,
+    .boxbar,
+    .deadlink,
+    .gal-name,
+    #qr select,
+    select,
+    kbd,
+    #thread-watcher > .move,
+    .qr-shortcut,
+    span.dateTime,
+    .yotsuba.fixed:root #custom-board-list .current,
+    .yotsuba-b.fixed:root #custom-board-list .current,
+    .yotsuba-b:root #header-bar:hover,
+    .yotsuba-b:root #board-list a:hover,
+    .quotelink:hover,
+    .settings-link,
+    span.menu-button,
+    #thread-stats,
+    .container,
+    .fileText,
+    .yotsuba:root #header-bar,
+    .yotsuba:root #notifications,
+    div.post div.postInfo span.postNum,
+    div.post div.postInfo span.postNum a {
+        color: var(--third-text) !important;
+    }
+
+
+
+    div.reply,
+    .catalog-mode:root .board,
+    .inline .post {
+        background: var(--post-bg) !important;
+    }
+
+
+    .boxcontent,
+    .top-box,
+    .left-box,
+    .right-box,
+    #recent-images a {
+        background: var(--post-bg) !important;
+    }
+
+
+    #fourchanx-settings.dialog,
+    fieldset legend,
+    .yotsuba-b:root .suboption-list > div:last-of-type,
+    .dialog:not(#qr):not(#thread-watcher):not(#header-bar),
+    #fourchanx-settings code,
+    kbd,
+    .reply:target,
+    .reply.highlight,
+    .yotsuba-b:root .inline {
+        background: var(--post-bg) !important;
+    }
+
+    #header-bar,
+    .yotsuba-b:root:not(.fixed) #header-bar,
+    span.boardList,
+    .yotsuba:root .suboption-list > div:last-of-type {
+        background: var(--header-bg) !important;
+    }
+
+
+    .yotsuba:root .inline,
+    .boxbar,
+    #qr select {
+        background: var(--alt-bg) !important;
+    }
+
+
+    #ft li,
+    .right-box,
+    .boxcontent,
+    .top-box,
+    .left-box,
+    #recent-images .boxcontent,
+    #qr select,
+    #archive-board-select,
+    select {
+        border: none !important;
+    }
+
+    .top-box .menubutton,
+    .right-box .menubutton {
+        background-image: none !important;
+    }
+
+    #ft li,
+    #ft ul {
+        background: none !important;
+        border: none !important;
+    }
+
+    body {
+        overflow-x: hidden !important;
+    }
+
+    .highlight-you:root .quotesYou.opContainer,
+    .highlight-you:root .quotesYou > .reply {
+        border-top: 1px solid var(--secondary-text) !important;
+    }
+
+    .post.reply.highlight {
+        border-top: 1px solid var(--secondary-text) !important;
+    }
+
+    .message {
+        background-color: var(--post-bg) !important;
+        color: var(--main-text) !important;
+        text-shadow: none !important;
+    }
+
+    .yotsuba:root #board-list a,
+    a:hover,
+    #watched-threads .watcher-title:hover {
+        transition: ease-in-out .2s !important;
+    }
+
+    #qr input.field {
+        opacity: 0 !important;
+    }
+
+    #qr input.field:hover {
+        opacity: 1 !important;
+    }
+
+    .centered-links:root #custom-board-list,
+    #thread-stats,
+    .settings-link,
+    span.menu-button,
+    #watcher-link,
+    #shortcut-gallery,
+    #thread-stats,
+    .div.boardTitle,
+    .yotsuba-b:root div.boardTitle,
+    div.boardTitle {
+        background: rgba(0, 0, 0, 0) !important;
+    }
+
+    #header-bar {
+        background: var(--post-bg) !important;
+        max-height: 35px !important;
+    }
+
+    #header-bar::before {
+        position: absolute !important;
+        margin: auto !important;
+        left: 0 !important;
+        top: 0 !important;
+        margin-top: 40px !important;
+        max-height: 100px !important;
+        width: 800px !important;
+    }
+
+
+    div.thread {
+        max-width: 1100px !important;
+        margin: 0 auto !important;
+    }
+
+
+
+    div.op {
+        margin-top: 0px !important;
+    }
+
+
+    #header-bar {
+        border: 0 !important;
+        margin: 0 auto !important;
+        margin-top: 0px !important;
+        display: inline-block !important;
+    }
+
+    span.boardList {
+        margin-top: 0px !important;
+        display: inline-block !important;
+    }
+    .hide-board-list-button {
+        margin-top: 28px !important;
+        display: inline-block !important;
+    }
+
+    .yotsuba-b:root #board-list {
+        max-width: 396px !important;
+    }
+
+
+    #header-bar a.current,
+    .yotsuba-b:root #board-list a,
+    .section-main label {
+        text-decoration: none !important;
+    }
+
+    .index-refresh-shortcut,
+    span.shortcut:nth-child(5),
+    #shortcut-index-refresh > a:nth-child(1) {
+        display: none !important;
+    }
+
+
+    .replyContainer {
+        padding: 0 !important;
+    }
+
+    .postContainer.replyContainer {
+        margin-top: -5px !important;
+    }
+
+    .post.reply,
+    .opContainer,
+    .post.reply:hover {
+        width: 100% !important;
+        padding: 10px !important;
+        -moz-box-sizing: border-box!important;
+    }
+
+    div.opContainer {
+        width: 100% !important;
+        margin: 0 auto !important;
+    }
+
+    .opContainer {
+        display: none;
+        padding-bottom: 3px !important;
+    }
+
+    span.postNum a:hover {
+        font-family: Open Sans !important;
+    }
+
+    div.reply,
+    .post.reply,
+    .opContainer {
+        border: 0px !important;
+        border-style: solid !important;
+    }
+
+
+    div.post blockquote.postMessage {
+        width: 96% !important;
+    }
+
+
+    div.post div.postInfo span.postNum {
+        padding: 8px !important;
+        float: right !important;
+        margin-right: 4px !important;
+        margin-top: -8px !important;
+    }
+
+    span.dateTime {
+        padding: 4px !important;
+        right: 27% !important;
+        margin-top: -4px !important;
+    }
+
+    body,
+    .post.reply,
+    .opContainer,
+    #board-list,
+    #custom-board-list,
+    #menu.dialog,
+    .entry,
+    .yotsuba-b:root .suboption-list > div:last-of-type,
+    option,
+    #qr textarea.field,
+    .field,
+    #index-search.field,
+    #updater.dialog,
+    #thread-stats.dialog,
+    #thread-stats,
+    .boardSubtitle,
+    #thread-watcher,
+    div.post div.postInfo span.nameBlock span.postertrip,
+    div.post div.postInfo span.nameBlock span.name,
+    div.post div.postInfo span.subject,
+    #qr:not(.captcha-open) .captcha-counter > a,
+    #file-n-submit > input,
+    #watcher-link,
+    .settings-link,
+    .expand-all-shortcut,
+    .qr-shortcut,
+    div#boardNavDesktop,
+    .yotsuba_b_new .backlink,
+    .quotelink,
+    div#boardNavDesktop a,
+    table.postForm > tbody > tr > td:first-child,
+    input[type="text"],
+    input[type="password"],
+    table.postForm > tbody textarea,
+    #recaptcha_response_field,
+    div#boardNavDesktopFoot a,
+    #qr select {
+        font-family: "Open Sans", "Segoe UI" !important;
+        font-weight: 600 !important;
+        font-size: 13px !important;
+    }
+
+
+
+
+    .settings-link.fa-wrench:before,
+    .qr-shortcut:before,
+    #watcher-link:before {
+        font-size: 14px !important;
+    }
+
+    #thread-stats {
+        position: absolute !important;
+        left: 14px !important;
+    }
+
+
+    .settings-link {
+        position: absolute !important;
+        right: 15px !important;
+    }
+
+    .settings-link.fa-wrench:before {
+        content: "Options" !important;
+        margin-right: 5px !important;
+        z-index: 3 !important;
+    }
+
+    .fa-comment-o {
+        position: absolute !important;
+        right: 160px !important;
+        top: 18px !important;
+    }
+
+
+    a,
+    a:hover,
+    div.post div.postInfo span.postNum a:hover,
+    a.quotelink,
+    a.deadlink {
+        text-decoration: none !important;
+    }
+
+
+
+
+    #header-bar .brackets-wrap:after,
+    #header-bar .brackets-wrap:before,
+    .shortcut:not(:last-child):after {
+        content: ""!important;
+    }
+
+    #update-timer {
+        color: transparent !important;
+    }
+
+    a.current:nth-child(5),
+    .yotsuba.fixed:root #custom-board-list .current:hover,
+    .yotsuba-b.fixed:root #custom-board-list .current {
+        border-bottom: 0px;
+    }
+
+
+    .navLinks {
+        margin-top: 50px !important;
+    }
+
+    #index-size,
+    #index-sort,
+    #index-mode {
+        border: none !important;
+    }
+
+    span.navLinks:nth-child(1) {
+        display: none;
+    }
+
+    div.sideArrows,
+    .qr-link-container,
+    .boardSubtitle,
+    .bottomCtrl.desktop,
+    #absbot.absBotText,
+    .navLinks.desktop,
+    .navLinks.navLinksBot.desktop {
+        display: none !important;
+    }
+
+    div.center:nth-child(16),
+    div.center:nth-child(6) {
+        display: none !important;
+    }
+
+    div.center:nth-child(4) {
+        border: none !important;
+    }
+
+    .yotsuba:root .hide-post-button,
+    .yotsuba-b:root .hide-post-button {
+        display: none !important;
+    }
+
+    #unread-line {
+        border: 0!important;
+        height: 1px!important;
+        margin-top: -10px!important;
+    }
+
+    .inline {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        border: 0 !important;
+    }
+
+    /* overlay and menu */
+    #overlay {
+        background: rgba(0, 0, 0, 0.7) !important;
+    }
+
+
+    #fourchanx-settings legend {
+        font-family: "Pacifico", "Segoe Script" !important;
+        font-size: 25px !important;
+        font-weight: 200 !important;
+    }
+
+
+    :root a.backlink {
+        margin-left: 5px !important;
+    }
+
+    .postInfo > input,
+    a.hide-reply-button > span {
+        display: none !important;
+    }
+
+    .fileText a {
+        text-decoration: none;
+    }
+
+    #qp,
+    kbd {
+        border: 0 !important;
+    }
+
+    .close.fa.fa-times {
+        display: none !important;
+    }
+
+    #qr.dialog.has-captcha.autohide {
+        border: 0px solid #6b454f !important;
+    }
+
+    #qr.autohide:not(:hover):not(.has-focus) {
+        max-height: 21px;
+        transition: max-height 0.7s ease 1s;
+    }
+
+    #qr > form {
+        padding-top: 4px!important;
+    }
+
+    #qr {
+        background: var(--header-bg) !important;
+        border-radius: 0 !important;
+        transition: all 0.2s ease 0s;
+        transition: max-height 0.4s ease;
+        z-index: 1!important;
+    }
+
+    #qr > div,
+
+    #qr label input[type="checkbox"] {
+        opacity: 0.4 !important;
+    }
+
+    #qr label input[type="checkbox"]:hover {
+        opacity: 0.7 !important;
+    }
+
+    #qr .textarea textarea {
+        max-height: 184px;
+        transition: none!important;
+    }
+
+    .field,
+    #qr option:hover,
+    #dump-button:hover,
+    :root .field:hover,
+    #menu .entry.focused,
+    :root .field:focus,
+    #file-n-submit > input {
+        background: var(--header-bg) !important;
+        border-color: var(--header-bg) !important;
+        color: var(--main-text) !important;
+    }
+
+    #qr form {
+        bottom: 10px !important;
+        right: 0% !important;
+        width: 300px !important;
+        border: 1px var(--header-bg) !important;
+        padding: 0 !important;
+        padding-bottom: 0 !important;
+        background: var(--header-bg) !important;
+        border-color: var(--post-bg) !important;
+        border-radius: 0 !important;
+    }
+
+    #dump-button {
+        background: var(--header-bg) !important;
+        border-color: var(--post-bg) !important;
+        color: var(--main-text) !important;
+    }
+
+    #qr .field,
+    .field {
+        background: var(--header-bg) !important;
+        border: 1px var(--header-bg) !important;
+        color: var(--main-text) !important;
+    }
+
+    .replyContainer {
+        padding: 10px !important;
+    }
+
+    .menu-button > i {
+        display: none !important;
+    }
+
+    .fileText {
+        opacity: 0 !important;
+        max-height: 0px !important;
+        transition: .4s ease-out !important;
+    }
+
+    .file:hover .fileText,
+    .file.image-expanded .fileText {
+        opacity: 1 !important;
+        max-height: 22px !important;
+    }
+
+    /* info box block */
+    .fileText {
+        margin-top: 0px !important;
+        margin-left: -3px !important;
+        padding: 4px !important;
+        max-width: 440px !important;
+    }
+
+
+    div.post div.postInfo span.nameBlock span.name,
+    div.post div.postInfo span.nameBlock span.postertrip,
+    .nameBlock {
+        padding: 4px !important;
+        margin-left: -3px !important;
+    }
+
+    .warning {
+        padding: 4px !important;
+        margin-left: -3px !important;
+    }
+
+
+    .container {
+        padding: 4px !important;
+        margin-left: -3px !important;
+    }
+
+
+    .subject,
+    div.post div.postInfo span.subject {
+        padding: 4px !important;
+        margin-left: 4px !important;
+    }
+
+    #thread-stats {
+        padding: 6px !important;
+        margin-left: -13px !important;
+    }
+
+    .expand-all-shortcut {
+        padding: 6px !important;
+        margin-top: -3px !important;
+        margin-left: -168px !important;
+        display: none !important;
+    }
+
+    .expand-all-shortcut {
+        position: absolute !important;
+    }
+
+    .contract-all-shortcut {
+        margin-left: -160px !important;
+        top: 10px !important;
+        display: none !important;
+    }
+
+
+    #fourchanx-settings.dialog,
+    fieldset legend,
+    .yotsuba-b:root .suboption-list > div:last-of-type,
+    .dialog:not(#qr):not(#thread-watcher):not(#header-bar),
+    #fourchanx-settings code,
+    kbd {
+        border: none !important;
+    }
+
+    #fourchanx-settings fieldset {
+        border: 0px solid;
+        border-radius: 3px;
+    }
+
+
+    #blotter,
+    .globalMessage {
+        display: none !important;
+    }
+
+    #toggleMsgBtn {
+        opacity: 0 !important;
+    }
+    #toggleMsgBtn:hover {
+        opacity: 0.8 !important;
+    }
+
+    div.post div.postInfo span.postNum {
+        opacity: 0.8 !important;
+    }
+    div.post div.postInfo span.postNum:hover {
+        opacity: 0.5 !important;
+    }
+
+    .qr-shortcut {
+        position: absolute !important;
+        margin-left: 800px !important;
+        margin-top: 300px !important;
+        visibility: hidden !important;
+        background: transparent !important;
+        color: var(--post-bg) !important;
+        opacity: 1 !important;
+    }
+
+
+    .gal-prev,
+    .gal-next,
+    .gal-count,
+    .gal-name {
+        background: transparent !important;
+        border: none !important;
+    }
+
+    #a-gallery {
+        background: rgba(20, 21, 31, 0.7) none repeat scroll 0% 0% !important;
+    }
+
+    .gal-prev::after {
+        border-right: 12px solid var(--secondary-text) !important;
+    }
+
+    .gal-next::after {
+        border-left: 12px solid var(--secondary-text) !important;
+    }
+
+    /* old qr */
+    table.postForm > tbody > tr > td:first-child,
+    input[type="text"],
+    input[type="password"],
+    table.postForm > tbody textarea,
+    #recaptcha_response_field {
+        background: transparent !important;
+        border: none !important;
+    }
+
+    #bannerCnt {
+        border: none;
+        padding: 0 !important;
+        opacity: 0.6 !important;
+    }
+    #bannerCnt:hover {
+        opacity: 0.5 !important;
+    }
+
+    .qr-link-container + #togglePostFormLink,
+    #appchan-gal {
+        display: none !important;
+    }
+
+    div.thread {
+        background: transparent !important;
+    }
+
+    .opContainer {
+        background: #ebebeb !important;
+    }
+
+    a.fileThumb,
+    div.post div.file .fileThumb img {
+        float: right !important;
+    }
+
+    .board {
+        margin: 0 auto !important;
+        max-width: 1500px !important;
+        margin-top: 20px !important;
+    }
+
+    .navLinks {
+        background: var(--post-bg) !important;
+        padding: 0 !important;
+        margin: 0 auto !important;
+        max-width: 1540px !important;
+        margin-top: 60px !important;
+    }
+
+    .catalog-mode:root .board {
+        padding: 25px !important;
+    }
+
+    .catalog-stats {
+        background: var(--alt-bg) !important;
+        padding: 5px !important;
+    }
+    .catalog-thread > .subject {
+        background: var(--header-bg) !important;
+        padding: 5px !important;
+    }
+    .catalog-thread > .comment {
+        background: var(--header-bg) !important;
+        padding: 5px !important;
+    }
+
+
+    .catalog-reply,
+    .catalog-post.catalog-post:hover {
+        background: var(--alt-bg) !important;
+        border: none !important;
+    }
+
+    div.navLinks {
+        padding: 5px !important;
+    }
+
+    .bottomlink,
+    .archlistlink,
+    .indexlink {
+        display: none !important;
+    }
+
+    .brackets-wrap::after,
+    .brackets-wrap::before {
+        content: "" !important;
+    }
+    #index-search,
+    #index-size,
+    #index-sort,
+    #index-mode {
+        background: var(--header-bg) !important;
+    }
+
+    span.postNum.desktop a[title="Link to this post"] {
+        visibility: hidden !important;
+    }
+
+    span.postNum.desktop a[title="Link to this post"]:after {
+        content: "#" !important;
+        font-size: 12px !important;
+    }
+
+
+    .centered-links:root #custom-board-list {
+        top: 13px !important;
+        padding: 10px !important;
+    }
+
+    #thread-stats,
+    .settings-link {
+        padding: 15px !important;
+        top: 0px !important;
+    }
+
+    span.menu-button {
+        padding: 15px !important;
+        top: 0px !important;
+        left: 1% !important;
+        width: 3px !important;
+    }
+
+    #watcher-link {
+        padding: 20px !important;
+        margin-left: -100px !important;
+        opacity: 1 !important;
+        position: absolute !important;
+    }
+
+    #shortcut-gallery {
+        padding: 15px !important;
+        margin-left: -100px !important;
+        margin-top: -5px !important;
+        opacity: 1 !important;
+        position: absolute !important;
+        display: none !important;
+    }
+
+    #header-bar .menu-button i {
+        margin-top: 0px !important;
+    }
+
+    div.post div.postInfo span.nameBlock:after {
+        content: "||" !important;
+    }
+
+    span.postNum.desktop a[title="Link to this post"]:after {
+        opacity: 0.8 !important;
+    }
+
+    div.boardBanner {
+        width: 700px !important;
+        height: 100px !important;
+        margin: 0 auto !important;
+    }
+
+    #header-bar::before {
+        z-index: -1 !important;
+    }
+
+    div.boardBanner > div.boardTitle {
+        z-index: 9999 !important;
+    }
+
+
+
+    select {
+        text-align: center !important;
+        width: 120px !important;
+        height: 20px !important;
+    }
+
+    #index-options select {
+        margin-right: 10px !important;
+    }
+
+
+    .dialog.submenu {
+        margin-top: -40px !important;
+        z-index: 99999 !important;
+        padding: 0 !important;
+    }
+
+
+    #header-bar,
+    #header-bar::before,
+    .yotsuba:root:not(.fixed) #header-bar {
+        min-width: 100% !important;
+        top: 0 !important;
+        position: absolute !important;
+    }
+
+
+    .fa-angle-down::before,
+    .op .menu-button,
+    .postContainer .menu-button {
+        transition: .2s ease-out;
+        opacity: 0.5 !important;
+    }
+    .fa-angle-down:hover,
+    .op .menu-button:hover,
+    .postContainer .menu-button:hover {
+        transition: .2s ease-out;
+        opacity: 1 !important;
+    }
+
+
+    div.thread {
+        background: #f2f2f2 !important;
+    }
+
+    hr {
+        margin-top: 50px !important;
+        padding-top: 5px !important;
+        border: 0 !important;
+    }
+
+    #announce {
+        color: #fff;
+    }
+
+    div.boardBanner {
+        display: none;
+    }
+
+    img.middlead,
+    .middlead > div,
+    .middlead a img {
+        display: none;
+    }
+
+    a.replylink:not(:hover),
+    div#absbot a:not(:hover) {
+        color: #192 !important;
+    }
+
+    div.pagelist {
+        font-size: 14px !important;
+        background: #151515;
+        list-style: none;
+        overflow: hidden;
+        color: #a9a9a9;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        align-content: center;
+    }
+
+    html.zfyfnho.idc0_343 body div#doc div#bd div#abc-cnt {
+        display: none;
+    }
+
+    .aboveMidAd {
+        display: none;
+    }
+
+    .danbo-slot {
+        display: none;
+    }
+
+    a.fileThumb,
+    div.post div.file .fileThumb img {
+        padding: 5px;
+        margin-left: 50px;
+        float: right !important;
+    }
+}
