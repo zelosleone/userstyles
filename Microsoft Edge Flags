@@ -1,0 +1,62 @@
+Experimental QUIC protocol
+Enabled
+
+Experimental JavaScript
+Enabled
+
+Experimental JavaScript shared memory features
+Disabled
+
+Experimental WebAssembly
+Enabled
+
+Experimental WebAssembly JavaScript Promise Integration (JSPI)
+Enabled
+
+Future V8 VM features
+Enabled
+
+Experimental Web Platform features
+Enabled
+
+Enable Zero-Copy Video Capture
+Enabled
+
+Disable site isolation
+Disabled
+
+Block scripts loaded via document.write
+Enabled
+
+Enable (deprecated) synchronous mutation events
+Disabled
+
+Experimental Tracking Prevention Features
+Enabled
+
+Result filters for find on page
+Enabled
+
+TLS Kyber Confidentiality
+Enabled
+
+Enhance text contrast
+Enabled
+
+Allow preloading of pages by other applications
+Enabled
+
+New PDF Viewer
+Enabled
+
+Strict-Origin-Isolation
+Enabled
+
+Use DNS https alpn
+Enabled
+
+Run video capture service in browser
+Disabled
+
+Enable experimental cookie features
+Enabled
