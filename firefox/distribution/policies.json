@@ -1,0 +1,13 @@
+{
+  "policies": {
+    "DisableFirefoxStudies": true,
+    "DisableTelemetry": true,
+    "DisableFeedbackCommands": true,
+    "DisableSetDesktopBackground": true,
+    "DisablePrivateBrowsing": true,
+    "DisableSafeMode": true,
+    "NoDefaultBookmarks": true,
+    "DisableSystemAddonUpdate": true,
+    "DisableDeveloperTools": true
+  }
+}
