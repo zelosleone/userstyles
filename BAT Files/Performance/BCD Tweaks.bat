@@ -13,6 +13,7 @@ bcdedit /set highestmode Yes
 bcdedit /set forcefipscrypto No
 bcdedit /set uselegacyapicmode No
 bcdedit /set ems No
+bcdedit /set xsavedisable 0
 bcdedit /set debug No
 bcdedit /set hypervisorlaunchtype Off
 pause
